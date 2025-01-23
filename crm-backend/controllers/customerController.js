@@ -29,7 +29,7 @@ exports.getCustomers = async (req, res) => {
         { phone: { $regex: search, $options: 'i' } },
       ];
     }
-
+    
     if (company) {
       query.company = company;
     }
